@@ -1,10 +1,9 @@
 import pymysql
 
-
 # Function to create a connection to the MySQL database
 def create_connection():
     return pymysql.connect(
-        host="container_ip_address",  # MySQL server host in another container
+        host="mysql",  # MySQL server  host name container name
         user="root",       #  MySQL username
         password="root",  #  MySQL password decared in container
         database="userinfo"    #  MySQL database name declared in container 
